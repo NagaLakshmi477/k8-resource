@@ -286,12 +286,13 @@ kubectl exec -it configmap-env -- bash
 secrets:
 echo -n "admin" | base64 --> It will some value
 echo -n "admin321" | base64 --> it wil use for user namew and passwords
+
 Service mesh:
 ===================
 pod to pod communication, IP address is not useful since it is ephemeral.
 we have services in k8's to achieve 
 1. pod to pod communication
-2. load blancing
+2. load blancer
 
 Service:
 ==========
