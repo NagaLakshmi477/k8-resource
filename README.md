@@ -238,9 +238,10 @@ pod2 ---> to store the logs.----> push ----> elastic search
 
 multi containers are useful in sidecar patters and proxy patters. proxy means 1st proxy container gets the request, it checks whether the request shoild be forward to main containeror not
 
-catalogue,user,cart,shipping,payment frontend can be in same pod multiple contianers but we need to use diffrent nodes opened by conatiners
+catalogue,user,cart,shipping,payment frontend can be in same pod as multiple contianers but we need to use diffrent ports opened by conatiners
 
 labels:
+========
 lables are used as a selector for other resources usedful for filterring resources.
 lables values can't keep long values only 63 char
 
