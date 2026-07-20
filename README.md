@@ -261,11 +261,13 @@ horizonatal scaling vs vertical scaling:
 you should not stay while remodling the house
 you basement may not strong to bear another floors
 
-This is called vertical scaling
+This is called vertical scaling, it is single point of falure and it conain downtime
+
 
 a server is full  we need to stop and pod and increase the resource capacity. It have downtime and single point of failure.
 here we can incraese the resources in server
 Horizonatal scaling:
+------------------------------
 we can increase the number of serves
 1 pod is busy then we can create another pod
 It doesn't have downtime
@@ -274,8 +276,6 @@ kubectl top pods ----> to see the memory usage
 
 kubectl exec -it env-var-demo -- bash
 env
-
-
 
 Service mesh:
 ===================
