@@ -168,6 +168,8 @@ kubectl delete -f <filename>
 to delete cluster:
 ==========
 eksctl delete cluster --config-file=eks.yaml
+
+
 yaml slection:
 ---------------
 apiVersion: v1
