@@ -1,11 +1,12 @@
 apiVersion: v1
-kind: Pod
+kind: ConfigMap
 metadata:
   name: config
   labels:
     purpose: config
     env: dev
+
 data:
-  course: "Devops with AWS "
+  course: "Devops with AWS"
   duration: "120hrs"
   trainer: "Siva"
