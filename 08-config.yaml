@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: config
-  lables:
+  labels:
     purpose: config
     env: dev
 data:
