@@ -1,0 +1,11 @@
+appVersion: v1
+kind: Pod
+metadata:
+  name: configmap-env
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      envFrom:
+        - configMapRef:
+            name: pod-config # 08-config.yaml file name
