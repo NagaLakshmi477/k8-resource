@@ -277,6 +277,9 @@ kubectl top pods ----> to see the memory usage
 kubectl exec -it env-var-demo -- bash
 env
 
+try to keep configuration outside --> loose coupling
+we try keep configurations ouside the pod defination --> configMap means key value pair
+
 Service mesh:
 ===================
 pod to pod communication, IP address is not useful since it is ephemeral.

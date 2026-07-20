@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config
+  lables:
+    purpose: config
+    env: dev
+data:
+  course: "Devops with AWS "
+  duration: "120hrs"
+  trainer: "Siva"
