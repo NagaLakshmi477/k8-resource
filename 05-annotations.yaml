@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotations
+  labels:
+    name: roboshop
+    env: dev
+  annotations:
+    description: "This is pod is created for annotations "
