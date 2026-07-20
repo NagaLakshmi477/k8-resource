@@ -1,8 +1,11 @@
 apiVersion: v1
 kind: Secret
+
 metadata:
   name: pod-secret
+
 type: Opaque
+
 data:
-  username: "hjjk8798"
-  password: "uobhytcghk"
+  username: aGpqazg3OTg=
+  password: dW9iaHl0Y2doaw==
