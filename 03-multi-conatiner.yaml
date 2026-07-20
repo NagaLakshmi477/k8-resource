@@ -14,4 +14,4 @@ spec:
     image: almalinux:9
     # here we will get CrashLoopBackOff error beacuse nginx will run automatically in background using deamon
     # but for almalinux we don't have anything to run by default that why error came
-    command: [ "sleep", "1000"]
+    command: ["sleep", "1000"]
