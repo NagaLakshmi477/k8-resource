@@ -279,6 +279,7 @@ env
 
 try to keep configuration outside --> loose coupling
 we try keep configurations ouside the pod defination --> configMap means key value pair
+we created podconfig we need to attach to pod
 
 Service mesh:
 ===================
