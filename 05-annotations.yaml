@@ -6,4 +6,8 @@ metadata:
     name: roboshop
     env: dev
   annotations:
-    description: "This is pod is created for annotations "
+    description: "This is pod is created for annotations"
+spec:
+  containers:
+  - name: nginx
+    image: nginx
