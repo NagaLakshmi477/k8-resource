@@ -4,7 +4,7 @@ metadata:
   name: multi-containers
   labels:
     project: Roboshop
-    purpose: multi containers
+    purpose: multi-containers
 spec:
   containers:
   - name: nginx
