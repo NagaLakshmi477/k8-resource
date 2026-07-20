@@ -281,6 +281,11 @@ try to keep configuration outside --> loose coupling
 we try keep configurations ouside the pod defination --> configMap means key value pair
 we created podconfig we need to attach to pod
 
+kubectl exec -it configmap-env -- bash
+
+secrets:
+echo -n "admin" | base64 --> It will some value
+echo -n "admin321" | base64 --> it wil use for user namew and passwords
 Service mesh:
 ===================
 pod to pod communication, IP address is not useful since it is ephemeral.
