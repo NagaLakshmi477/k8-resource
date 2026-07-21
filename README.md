@@ -320,8 +320,6 @@ In service we have 3 types
 -------------------------
 1. cluster IP ----> Internal to the cluster means within the cluster
 2. nodePort ---> It will open one port called node port in every node, external expose
-
-
 3. Load blancer ----> It will create load blancer and nodeport in all nodes
 
 Cluster Ip is created by deafult if we haven't mention any type
@@ -353,9 +351,12 @@ we need to allow the sg then it canable to acess
 
 load blancer:
 ===============
-load blancer conatiner cluster Ip, node port and one load blancer 
+load blancer contain cluster Ip, node port and one load blancer 
 load blancer ---> node on Nodeport ----> cluster Ip  ----> pod
 
+ reuest --> loadbalncer --> node on node port --> cluster Ip --> Pod
+ serviec is not but dns
+ 
 How i can create multiple pods to same image:
 ---------------------------------------------
 nginx-c6h7j == replica-name-<random-5digits-code>
