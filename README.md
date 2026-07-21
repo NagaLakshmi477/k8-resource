@@ -356,12 +356,13 @@ load blancer ---> node on Nodeport ----> cluster Ip  ----> pod
 
  reuest --> loadbalncer --> node on node port --> cluster Ip --> Pod
  serviec is not but dns
- 
+
 How i can create multiple pods to same image:
 ---------------------------------------------
 nginx-c6h7j == replica-name-<random-5digits-code>
 
 If any pod delete by mistakel the replaica will create automatically 
+pod is a subset of replica set
 
 Deployement:
 ===========
