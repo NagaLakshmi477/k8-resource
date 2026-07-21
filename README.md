@@ -138,7 +138,8 @@ commands:
 cd docker-file
 
 eksctl  create cluster --config-file=eks.yaml
-
+eksctl create nodegroup --config-file=eks.yaml
+eksctl get nodegroup --cluster roboshop --region us-east-1
 Now cluster is created we need to intract with nodes
 kubectl get nodes --> shows the worker node
 
@@ -312,11 +313,13 @@ service end point is ---> pod IP
 to see the pod Ip ---> kubectl get pods -o wide 
 
 Here service name will work on DNS names
+kubectl describe svc nginx
+dns will work based on the service names
 
 In service we have 3 types
 -------------------------
-1. cluster IP ----> Internal to the cluster
-2. nodePort ---> It will open one port called node port in every node
+1. cluster IP ----> Internal to the cluster means within the cluster
+2. nodePort ---> It will open one port called node port in every node, external expose
 3. Load blancer ----> It will create load blancer and nodeport in all nodes
 
 Cluster Ip is created by deafult if we haven't mention any type
