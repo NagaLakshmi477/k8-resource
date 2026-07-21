@@ -360,7 +360,7 @@ load blancer ---> node on Nodeport ----> cluster Ip  ----> pod
 How i can create multiple pods to same image:
 ---------------------------------------------
 nginx-c6h7j == replica-name-<random-5digits-code>
-
+It will create random names suing replica anme
 If any pod delete by mistakel the replaica will create automatically 
 pod is a subset of replica set
 
@@ -371,7 +371,7 @@ v1 code ----> changes ----> v2
 1. delete the v1 application
 2. download the v2 application
 3. restart
-
+delete old pods and create new pods with new image
 pod is the subset of replica set
 replica is the subset of deplaoyement
 
