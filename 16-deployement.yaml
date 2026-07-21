@@ -11,15 +11,12 @@ metadata:
 spec:
   replicas: 3
 
-  # ReplicaSet uses these labels to create/manage pods
-  # These should match pod template labels
   selector:
     matchLabels:
       purpose: dp-demo
       project: roboshop
       app: nginx
 
-  # Pod definition
   template:
     metadata:
       labels:
@@ -28,6 +25,6 @@ spec:
         app: nginx
 
     spec:
-      containerdeployment-demo:
+      containers:
         - name: nginx
           image: nginx:stable-perl
