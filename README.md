@@ -320,6 +320,8 @@ In service we have 3 types
 -------------------------
 1. cluster IP ----> Internal to the cluster means within the cluster
 2. nodePort ---> It will open one port called node port in every node, external expose
+
+
 3. Load blancer ----> It will create load blancer and nodeport in all nodes
 
 Cluster Ip is created by deafult if we haven't mention any type
@@ -340,8 +342,9 @@ EC2 == nodes
 we need to allow the sg 
 ec2 ---> sg group ---> sg_id ---> edit ---> custom tcp --->32752 ---> anywhere ---> 0.0.0.0/0 ---> done
 then we can able to acces the application
-we can call node port Ip is cluster Ip and it has some extra capabilites
-
+we can call node port Ip is cluster Ip and it has some extra capabilites openminga port in worker node
+kubectl apply -f 13-service-np.yaml
+kubectl get svc
 cluster IP is a subset of node port
 extra capabilities:
 ---------

@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-lb
+  labels:
+    purpose: Service-lb-demo
+spec:
+  type: LoadBalancer
+  selector:
+    purpose: config
+    env: dev
+    project: roboshop
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-lb
+  labels:
+    purpose: Service-lb-demo
+    env: dev
+    project: roboshop
+spec:
+  containers:
+  - name: nginx
+    image: nginx
