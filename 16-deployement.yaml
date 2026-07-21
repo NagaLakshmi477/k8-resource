@@ -3,7 +3,6 @@ kind: Deployment
 
 metadata:
   name: nginx
-  # ReplicaSet labels
   labels:
     purpose: dp-demo
     project: roboshop
@@ -29,6 +28,6 @@ spec:
         app: nginx
 
     spec:
-      containers:
+      containerdeployment-demo:
         - name: nginx
-          image: nginx
+          image: nginx:stable-perl
