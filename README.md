@@ -372,8 +372,9 @@ v1 code ----> changes ----> v2
 2. download the v2 application
 3. restart
 delete old pods and create new pods with new image
+
 pod is the subset of replica set
-replica is the subset of deplaoyement
+replica is the subset of deployement
 
 
 install kubec
