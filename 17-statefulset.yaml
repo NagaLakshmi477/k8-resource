@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sc-headless-svc
+  labels:
+    purpose: statefulset
+    project: roboshop
+spec:
+  clusterIP: None
+  selector:
+    purpose: statefulset
+    project: roboshop
+
+  ports:
+    - port: 80
+      name: web
+      targetPort: 80
