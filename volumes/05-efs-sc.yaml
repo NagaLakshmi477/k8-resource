@@ -3,8 +3,9 @@ kind: StorageClass
 metadata:
   name: efs-roboshop
 provisioner: efs.csi.aws.com
+reclaimPolicy: Retain
 parameters:
   provisioningMode: efs-ap
   fileSystemId: fs-014a24177d58704fb
   directoryPerms: "700"
-  basePath: "/roboshop"
+  basePath: "/roboshop" #/roboshop/cart 
